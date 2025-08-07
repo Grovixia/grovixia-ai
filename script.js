@@ -425,7 +425,7 @@ async function handleSendMessage() {
     abortController = new AbortController();
 
     try {
-        const response = await fetch('/chat', {
+        const response = await fetch('https://grovixia-ai.onrender.com/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ history: historyForAI }),
